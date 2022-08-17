@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>IMC calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="card">
+                <h1 class="title">Cálculo de IMC</h1>
+                <form>
+                    <label for="weight">Peso (kg)</label>
+                    <input type="number" id="weight" required placeholder="Digite seu peso">
+                    <label for="height">Altura (cm)</label>
+                    <input type="number" id="height" required placeholder="Digite sua altura">
+                    <button type="submit">
+                        Calcular IMC
+                        <img src="src/svg/arrow.svg" alt="Seta branca apontando para esquerda">
+                    </button>
+                </form>
+            </div>
+            <div class="modal-wrapper">
+                <div class="modal card">
+                    <h2 class="title"></h2>
+                    <button id="btnClose"><img src="src/svg/close.svg" alt="X para fechar o modal"></button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="src/js/app.js" type="module"></script>
+</body>
+
+</html>
